@@ -5,7 +5,7 @@ import Image from 'next/image'
 import ListItem from "@/components/ListItem";
 import getSongs from '@/actions/getSongs';
 export const revalidate = 0;
-
+import musicplayer from '@/public/images/purepng.com-music-iconsymbolsiconsapple-iosiosios-8-iconsios-8-721522596085b6osz.png'
 import PageContent from "./components/PageContent";
 export default async function Home() {
   
@@ -26,13 +26,28 @@ export default async function Home() {
 {/* add divs and h1 elements */}
 
 <div className="mb-2">
+          
+          
+          {/* <img src='musicplayer' alt="" /> */}
+          
+         
           <h1 
             className="
             text-white 
-              text-3xl 
+              text-4xl 
               font-semibold
+              flex
+              
             ">
-              Welcome back
+              
+              <Image className=' animate-bounce w-16 mr-2' src={musicplayer} alt=''/>
+          
+          
+              <p>Welcome Back to Spotify Clone!</p>
+              
+            
+         
+         
           </h1>
 
           {/* main statement */}
@@ -55,6 +70,7 @@ export default async function Home() {
 
             {/* change the size of it later */}
           </div>
+          
         </div>
 
 
@@ -64,10 +80,12 @@ export default async function Home() {
         <div className="flex justify-between items-center">
           <h1 className="text-white text-2xl font-semibold">
 
-            Newest songs
+            Newest Songs
 
             {/* basically a explore page. Shows new songs. Change wording and other stuff later if i want.  */}
           </h1>
+          {/* <Image className=' w-28 ' src={musicplayer} alt=''/> */}
+          
         </div>
         <PageContent songs={songs} />
         {/* List of Songs! */}

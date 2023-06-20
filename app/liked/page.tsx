@@ -16,6 +16,7 @@ import LikedContent from "./components/LikedContent";
 
 export const revalidate = 0;
 
+import mypic from '@/public/images/liked.png'
 const Liked = async () => {
   const songs = await getLikedSongs();
 
@@ -54,16 +55,17 @@ const Liked = async () => {
 
                 {/* has image type for our playlist, change our image later but have it the same name */}
               <Image
-                className="object-cover"
+                className="object-cover hover:animate-pulse"
                 fill
-                src="/images/liked.png"
+                // src="/images/liked.png"
+                src={mypic}
                 alt="Playlist"
               />
 
               {/* this puts the image on the top left side and then writes playlist and then songs underneath */}
             </div>
             <div className="flex flex-col gap-y-2 mt-4 md:mt-0">
-              <p className="hidden md:block font-semibold text-sm">
+              <p className="hidden md:block font-bold text-xl">
                 Playlist
 
                 {/* its our only playlist but valid.  */}

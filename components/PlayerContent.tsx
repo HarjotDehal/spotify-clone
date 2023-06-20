@@ -229,7 +229,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
           <div className="flex items-center gap-x-2 w-[120px]">
             <VolumeIcon 
               onClick={toggleMute} 
-              className="cursor-pointer" 
+              className="cursor-pointer " 
               size={34} 
             />
             {/* has our volume value, we can also mute it easily  */}

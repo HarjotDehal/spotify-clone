@@ -36,7 +36,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
           items-center 
           w-full 
           gap-x-4 
-          text-md 
+          text-xl 
           font-medium
           cursor-pointer
           hover:text-white
@@ -51,7 +51,7 @@ const SidebarItem: React.FC<SidebarItemProps> = ({
       >
         
         <p className="truncate w-100">{label}</p>
-        <Icon size={26} />
+        <Icon size={36} />
 
 
         {/* This writes the name of our icon to the side of it. Nice, Flip these for fun */}

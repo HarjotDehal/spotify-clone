@@ -29,6 +29,8 @@ const Slider: React.FC<SlideProps> = ({
         select-none 
         touch-none 
         w-full 
+        cursor-pointer
+
         h-10
       "
     //   icon styling. 
@@ -47,6 +49,7 @@ const Slider: React.FC<SlideProps> = ({
           grow 
           rounded-full 
           h-[3px]
+          cursor-pointer
         "
       >
         {/* tracks our volume, has a range inside of it. Track is our ------.  range makes it full and bigger */}
@@ -56,6 +59,7 @@ const Slider: React.FC<SlideProps> = ({
             bg-white 
             rounded-full 
             h-full
+
           " 
         />
       </RadixSlider.Track>

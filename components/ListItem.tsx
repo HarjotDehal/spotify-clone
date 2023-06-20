@@ -7,6 +7,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { FaPlay } from "react-icons/fa";
+import mypic from '@/public/images/liked.png'
 
 // import useAuthModal from "@/hooks/useAuthModal";
 // import { useUser } from "@/hooks/useUser";
@@ -52,7 +53,7 @@ const ListItem: React.FC<ListItemProps> = ({
         gap-x-4 
         bg-neutral-100/10 
         cursor-pointer 
-        hover:bg-neutral-100/20 
+        hover:bg-emerald-700
         transition 
         pr-4
       "
@@ -66,7 +67,7 @@ const ListItem: React.FC<ListItemProps> = ({
 
         // change the picture later to have a background so its nicer. 
           className="object-cover"
-          src={image}
+          src={mypic}
           fill
           alt="Image"
         />
