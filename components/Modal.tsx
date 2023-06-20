@@ -90,7 +90,7 @@ const Modal: React.FC<ModalProps> = ({
           >
 
             {/* styles for our description, we can change this later if i want.  */}
-            {description}
+            Login to your account. <br /> Demo Email : harjotdehal@hotmail.com <br /> Password : password123 <br /> Create new account to view swipe integration or click on top right to go to our account page after signing in.
           </Dialog.Description>
           <div>
             {children}
