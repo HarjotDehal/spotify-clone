@@ -99,6 +99,8 @@ const ListItem: React.FC<ListItemProps> = ({
       >
         <FaPlay className="text-black" />
 
+        
+
         {/* play icon to play music probably.  This only shows up when we hover. Change the background of it later. green background looks bad */}
       </div>
     </button>

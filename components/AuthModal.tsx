@@ -54,7 +54,10 @@ const AuthModal = () => {
   return (
     <Modal 
       title="Welcome back" 
-      description="Login to your account. Demo Email-Address:harjotdehal@hotmail.com Password:password123 Create new account to view swipe integration or click on top right to go to our account page" 
+      description="Login to your account." 
+      // description= {"Login to your account." + "  \n "  + "  \n " + "  Demo Email-Address:harjotdehal@hotmail.com " + "  \n " + "  Password:password123 " + "  \n " + "  \n " + "Create new account to view swipe integration or click on top right to go to our account page"}
+      extra='Demo Email-Address:harjotdehal@hotmail.com Password:password123'
+      moreextra='Create new account to view swipe integration or click on top right to go to our account page'
       isOpen={isOpen}
       onChange={onChange} 
     >

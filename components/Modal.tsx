@@ -18,6 +18,8 @@ interface ModalProps {
   title: string;
   description: string;
   children: React.ReactNode;
+  extra:string;
+  moreextra:string;
 }
 
 const Modal: React.FC<ModalProps> = ({
@@ -25,7 +27,9 @@ const Modal: React.FC<ModalProps> = ({
   onChange,
   title,
   description,
-  children
+  children, 
+  extra,
+  moreextra
 }) => {
   return ( 
     <Dialog.Root open={isOpen} defaultOpen={isOpen} onOpenChange={onChange}>
@@ -88,9 +92,13 @@ const Modal: React.FC<ModalProps> = ({
               text-center
             "
           >
-
+              {description}
+              <br />
+              {extra}
+              <br />
+              {moreextra}
             {/* styles for our description, we can change this later if i want.  */}
-            Login to your account. <br /> Demo Email : harjotdehal@hotmail.com <br /> Password : password123 <br /> Create new account to view swipe integration or click on top right to go to our account page after signing in.
+            {/* Login to your account. <br /> Demo Email : harjotdehal@hotmail.com <br /> Password : password123 <br /> Create new account to view swipe integration or click on top right to go to our account page after signing in. */}
           </Dialog.Description>
           <div>
             {children}

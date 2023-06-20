@@ -50,7 +50,7 @@ const LikedContent: React.FC<LikedContentProps> = ({
           text-neutral-400
         "
       >
-        No liked songs.
+        No favorited songs. Favorite a song by tapping a song's heart on the search page or while a song is playing
       </div>
 
     //   only if no liked songs, then this wont work. Can change this tyle later but doesnt mattere

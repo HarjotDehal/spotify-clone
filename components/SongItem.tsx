@@ -6,6 +6,7 @@ import useLoadImage from "@/hooks/useLoadImage";
 import { Song } from "@/types";
 
 import PlayButton from "./PlayButton";
+import LikeButton from "./LikeButton";
 
 interface SongItemProps {
   data: Song;
@@ -87,6 +88,7 @@ const SongItem: React.FC<SongItemProps> = ({
             "
       >
         <PlayButton />
+        {/* <LikeButton songId={song.id} /> */}
 
         {/* allows each of our songs to be played */}
       </div>

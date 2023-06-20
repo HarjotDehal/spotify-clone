@@ -55,7 +55,7 @@ const Liked = async () => {
 
                 {/* has image type for our playlist, change our image later but have it the same name */}
               <Image
-                className="object-cover hover:animate-pulse"
+                className="object-cover animate-pulse"
                 fill
                 // src="/images/liked.png"
                 src={mypic}
@@ -79,7 +79,7 @@ const Liked = async () => {
                   font-bold
                 "
               >
-                Liked Songs
+                Your Favorite Songs
               </h1>
             </div>
           </div>
